@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '18'
+cache: npm
+script:
+  - npm run test
+  - npm run build
+deploy:
+  provider: npm
+  email: 'your-email@example.com'
+  api_key: '$NPM_TOKEN'
+  on:
+    tags: true

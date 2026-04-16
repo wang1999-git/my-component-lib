@@ -1,0 +1,23 @@
+{
+  "name": "my-component-lib",
+  "version": "1.0.0",
+  "description": "Vue3 business component library",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^29.0.2",
+    "vitest": "^4.1.4",
+    "vue": "^3.5.32"
+  }
+}
